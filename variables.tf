@@ -15,12 +15,6 @@ variable "name" {
   type        = string
 }
 
-variable "name_prefix" {
-  description = "Creates a unique name beginning with the specified prefix."
-  type        = string
-  default     = null
-}
-
 variable "visibility_timeout_seconds" {
   description = "The duration (in seconds) that the received messages are hidden from the queue."
   type        = number
@@ -168,12 +162,6 @@ variable "dlq_name" {
   description = "The name of the Dead Letter Queue (DLQ)."
   type        = string
   default     = "dlq"
-}
-
-variable "dlq_name_prefix" {
-  description = "Creates a unique name beginning with the specified prefix for the Dead Letter Queue (DLQ)."
-  type        = string
-  default     = null
 }
 
 variable "dlq_policy" {

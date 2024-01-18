@@ -1,5 +1,5 @@
 module "sqs_example" {
-  source = "github.com/BOlimpio/m-portal-aws-sqs"
+  source = "github.com/BOlimpio/m-portal-aws-sqs?ref=v1.0.0"
 
   # SQS variables
   name                        = "my-sqs-queue"
