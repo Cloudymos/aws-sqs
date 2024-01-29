@@ -24,7 +24,6 @@ module "sqs_example" {
 
   # DLQ variables
   create_dlq_queue                   = true
-  dlq_name_prefix                    = "my-dlq"
 
   //dlq_producer_principals      = ["arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/dlq-producer-role"]
   dlq_consumer_principals      = ["arn:aws:iam::${data.aws_caller_identity.current.account_id}:user/cloudymos"]
